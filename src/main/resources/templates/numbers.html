@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="text-align: center;">
+    <h1>nothing here!!!</h1>
+    <h2>Here are your numnums</h2>
+    <div th:if="${not #lists.isEmpty(imgList)}" >
+        <div th:each="image: ${imgList}" style="display: inline;">
+            <img width="250" th:src="@{${image.path}}" />
+        </div>
+
+    <!-- <div th:if="${not #lists.isEmpty(imgList)}">
+        <div th:each="img: ${imgList}">
+            <img th:src="@{${img.path}}"/>
+        </div> -->
+</div>
+</br>
+</br>
+</br>
+</br>
+    <a href="/">return</a>
+</body>
+</html>
